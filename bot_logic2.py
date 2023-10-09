@@ -8,3 +8,5 @@ def rd_emoji(random_emoji):
         emoji += random.choice(elements)
 
     return emoji
+
+#THIS FILE IS IN WIP DON'T CHANGE ANYTHING IN THE CODE UNLESS YOU KNOW CODING IN DISCORD PYTHON LIBRARY AND PYTHON
