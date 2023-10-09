@@ -1,7 +1,7 @@
 import discord
 
 from bot_logic1 import gen_pass
-from bot_logic2 import rd_emoji
+#from bot_logic2 import rd_emoji
 
 # Zmienna intencje przechowuje uprawnienia bota
 intents = discord.Intents.default()
@@ -49,10 +49,7 @@ async def on_message(message):
     elif message.content.startswith('$GenPass'):
         await message.channel.send("Password: " + gen_pass(14))
 
-    elif message.content.startswith('$RdEmoji'):
-        await message.channel.send(rd_emoji)
-    
-    else:
-        await message.channel.send("I don't understand your command.")
+    """elif message.content.startswith('$RdEmoji'):
+        await message.channel.send(rd_emoji)"""
 
 client.run("YOUR BOT TOKEN!")
