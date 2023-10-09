@@ -3,11 +3,10 @@ import discord
 from bot_logic1 import gen_pass
 #from bot_logic2 import rd_emoji
 
-# Zmienna intencje przechowuje uprawnienia bota
 intents = discord.Intents.default()
-# Włączanie uprawnienia do czytania wiadomości
+
 intents.message_content = True
-# Tworzenie bota w zmiennej klienta i przekazanie mu uprawnień
+
 client = discord.Client(intents=intents)
 
 @client.event
